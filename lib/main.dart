@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import 'screens/chat_screen.dart';
+
 void main() {
   runApp(const MyApp());
 }
@@ -25,23 +27,7 @@ class MyApp extends StatelessWidget {
           elevation: 0,
         ),
       ),
-      home: const HomePage(),
-    );
-  }
-}
-
-class HomePage extends StatelessWidget {
-  const HomePage({super.key});
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Control Room'),
-      ),
-      body: const Center(
-        child: Text('O chatbot está em construção.'),
-      ),
+      home: const ChatScreen(),
     );
   }
 }
